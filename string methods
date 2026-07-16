@@ -1,0 +1,40 @@
+# String Methods Assignment
+
+try:
+    # Read string from user
+    text = input("Enter a string: ")
+
+    # Convert to uppercase
+    print("\nUppercase:", text.upper())
+
+    # Convert to lowercase
+    print("Lowercase:", text.lower())
+
+    # Split the string
+    delimiter = input("\nEnter a delimiter to split the string: ")
+    print("Split Result:", text.split(delimiter))
+
+    # Replace a substring
+    old = input("\nEnter the substring to replace: ")
+    new = input("Enter the new substring: ")
+    print("After Replacement:", text.replace(old, new))
+
+    # Find a substring
+    search = input("\nEnter a character or substring to find: ")
+    index = text.find(search)
+
+    if index != -1:
+        print(f"'{search}' found at index {index}")
+    else:
+        print(f"'{search}' not found in the string.")
+
+    # Additional Examples
+    print("\n--- Example String Methods ---")
+    print("Length of string:", len(text))
+    print("Starts with 'H':", text.startswith("H"))
+    print("Ends with '.':", text.endswith("."))
+    print("Title Case:", text.title())
+    print("Count of letter 'a':", text.count("a"))
+
+except Exception as e:
+    print("An error occurred:", e)
